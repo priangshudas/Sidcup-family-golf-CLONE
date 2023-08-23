@@ -1,10 +1,10 @@
 var crsr = document.querySelector("#cursor")
 var blur = document.querySelector("#cursor-blur")
 document.addEventListener("mousemove",function(dets){
-    crsr.style.left = dets.x-10+"px"
-    crsr.style.top = dets.y-10+"px"
-    blur.style.left = dets.x-150+"px"
-    blur.style.top = dets.y-150+"px"
+    crsr.style.left = dets.x + "px"
+    crsr.style.top = dets.y + "px"
+    blur.style.left = dets.x - 150 + "px"
+    blur.style.top = dets.y - 150 + "px"
 })
 
 gsap.to("#nav",{
@@ -26,7 +26,7 @@ gsap.to("#main",{
     scrollTrigger:{
         trigger: "#main",
         scroller: "body",
-        start: "top -25v%",
+        start: "top -25vh",
         end: "top -70%",
         scrub: 1
     }
