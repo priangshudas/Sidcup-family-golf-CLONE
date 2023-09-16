@@ -4,13 +4,34 @@
     box-sizing: border-box;
     font-family: 'montserrat';
     color: #fff;
-    cursor: none;
+    /* cursor: none; */
+    
 }
 html , body{
     height: 100%;
     width: 100%;
+    
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #95C11E;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #96c11ec4;
+}
 #cursor{
     height: 20px;
     width: 20px;
@@ -18,6 +39,8 @@ html , body{
     border-radius: 50%;
     position: fixed;
     z-index: 99;
+    pointer-events: none;
+    transition: all linear 0.2s;
 }
 #cursor-blur{
     height: 300px;
@@ -27,6 +50,8 @@ html , body{
     position: fixed;
     filter: blur(100px);
     z-index: 9;
+    pointer-events: none;
+    transition: all linear 0.7s;
 }
 #nav{
     height: 120px;
@@ -38,16 +63,17 @@ html , body{
     gap: 50px;
     position: fixed;
     justify-content: start;
-    z-index: 99;
+    z-index: 99; 
 
 }
 #nav img{
     height: 70px;
-    transition: all linear 0.2s;
+    transition: all ease-in-out 0.2s;
 }
-/* #nav img:hover{
-    height: 67px;
-} */
+#nav img:hover{
+    height: 65px;
+    
+}
 #nav h4{
     text-transform: uppercase;
     font-weight: 400;
