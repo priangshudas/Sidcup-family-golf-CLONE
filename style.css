@@ -71,10 +71,10 @@ html , body{
     height: 70px;
     transition: all ease-in-out 0.2s;
 }
-#nav img:hover{
+/* #nav img:hover{
     height: 65px;
     
-}
+} */
 #nav h4{
     text-transform: uppercase;
     font-weight: 400;
